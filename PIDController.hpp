@@ -51,7 +51,7 @@ public:
       return error;
     }
 
-    float updateHeading(){
+    float updateHeading(){ // needs to go into robot class or as seperate function, or probably to imu.
         sensors_event_t a, g, temp;
         mpu.getEvent(&a, &g, &temp);
 
